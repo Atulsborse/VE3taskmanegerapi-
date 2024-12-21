@@ -5,8 +5,7 @@ export const connectDB = async () => {
     const conn = await mongoose.connect(process.env.MONGODB_URI, {
       // These options are no longer needed in newer versions of Mongoose
       // but kept for compatibility
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+     
     });
     
     console.log(`MongoDB Connected: ${conn.connection.host}`);
